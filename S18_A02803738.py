@@ -31,27 +31,67 @@ total1 = sum(persona1)
 total2 = sum(persona2) 
 total_general = total1 + total2
 
-pring("total persona 1:", total1) 
-pring("total persona 2:", total2) 
+print("total persona 1:", total1) 
+print("total persona 2:", total2) 
 print("total general:", total_general) 
 
 #porcentaje de aporte 
-pring("porcentaje persona 1:", (total1 / total_general) * 100, "%") 
-priny("porcentaje persona 2:", (total2 / total_general) * 100, "%") 
+print("porcentaje persona 1:", (total1 / total_general) * 100, "%") 
+print("porcentaje persona 2:", (total2 / total_general) * 100, "%") 
 
 #lista de compras 
-compras = ["leche, "pan", "huevos", "fruta", "arroz"] 
+compras = ["leche", "pan", "huevo ", "fruta", "arroz"]
 hechas = []
 no_hechas = []
 
 for item in compras: 
-    resp = input(f"¿ya compraste {item}? (si/no): ") 
-    if resp = "si": 
-        hechas.append(item) 
+        resp = input(f"¿ya compraste {item}? (si/no):").strip().lower()
+        if resp == "si":
+            hechas.append(item)
+        else:
+            no_hechas.append(item)
+print("\ncompras hechas:", hechas) 
+print("compras pendientes:", no_hechas) 
+
+ 
+  
+  #numeros de una lista 
+  numeros = [15, 8, 30, 2, 50, 7, 20] 
+print("lista original:", numeros) 
+print("valor maximo:", max(numeros))
+print("valor minimo:", min(numeros))
+print(lista ordenada:", sorted(numeros))
+
+
+
+# numeros pares e impares 
+numeros = [10, 21, 32, 43, 54, 65, 76, 87] 
+
+pares = [] 
+impares = []
+for n in numeros: 
+    if n % 2 = = 0:
+            pates.append(n)
+        else:
+            impares.append(n)
+print("numeros pares:",pares)
+pring("numeros impares:",impares)
+
+
+# nombre de usuario 
+usuario = []
+while true: 
+    nombre = input("ingresa un nombre de usuario (o 'fin' para terminar):")
+
+    if nombre.lower() == "fin":
+        break
+    if nombre in usuarios: 
+        print("ese nombre ya existe, elige otro.")
     else: 
-        no_hechas.append(item) 
-  print("\ncompras hechas:", hechas) 
-  print("compras pendientes:", no_hechas)
+        usuario.append(nombre)
+print("lista final de usuarios:", usuarios) 
+
+  
 
 
 
